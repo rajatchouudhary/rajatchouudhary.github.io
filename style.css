@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.background-container {
+    background-color: #ffa29a;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: opacity 7s;
+    animation-iteration-count: 1;
+}
+.background-animation {
+    width: 100%;
+    height: 100vh;
+    background-image: url("sparkle.gif");
+    background-blend-mode: overlay;
+    opacity: 0.18;
+    position: fixed;
+}
+.background-img{
+    width: 100%;
+    height: 100%;
+    background-image: url("ganesh1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.background-img h1 {
+    color: rgb(41, 41, 42);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 50% auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(8, 8, 8); }
+  }
+
+  @keyframes opacity {
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    50% {opacity: 0.8;}
+    75% {opacity: 0.6;}
+    95% {opacity: 0.4;}
+    100% {opacity: 0;}
+  }
+
+  .hero-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .hero-img {
+    width: 100%;
+    height: 100vh;
+  }
+  .hero-img img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: -3;
+  }
+.hero-text {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    text-align: center;
+}
+#heart {
+    width: auto;
+    height: 10%;
+}
+  .hero-text{
+    margin: 0;
+  }
+  .hero-text h1{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #a11349;
+    font-weight: 700;
+    letter-spacing: 1px;
+    height: 12vh;
+  }
+  .hero-text h2{
+    top: -6vh;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #611634;
+    font-weight: 800;
+  }
+  .hero-text p{
+    position: relative;
+    top: -6vh;
+    max-width: 70%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #6a2641;
+  }
+  .side img {
+    width: 100%;
+  }
+
+  #cover {
+    width: 40%;
+    z-index: -11;
+  }
