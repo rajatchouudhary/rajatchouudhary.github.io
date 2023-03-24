@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
@@ -74,6 +74,7 @@
     width: 100%;
     height: 100%;
     display: none;
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
   }
   .hero-img {
     width: 100%;
@@ -85,7 +86,6 @@
     position: absolute;
     left: 0%;
     bottom: 0%;
-    z-index: -3;
   }
 .hero-text {
     position: absolute;
@@ -108,7 +108,7 @@
   .hero-text h1{
     text-align: center;
     font-family: 'Pacifico', cursive;
-    color: #a11349;
+    color: #a2476a;
     font-weight: 700;
     letter-spacing: 1px;
     height: 12vh;
@@ -135,3 +135,68 @@
     width: 40%;
     z-index: -11;
   }
+
+  .content{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+  }
+  .line-break{
+    margin: 0 auto;
+    position: relative;
+    width: 50vw;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+#line{
+    width: 30%;
+    margin-top: 5px;
+    height: 2px;
+    background-color: #D89460;
+    border-radius: 50px;
+}
+#square{
+    width: 10px;
+    height: 10px;
+    background-color: #D89460;
+    transform: rotate(45deg);
+}
+.heading{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #593A20;
+}
+.heading-img img{
+    width: 50%;
+    margin-top: -20px;
+}
+.function {
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #A11349;
+    text-align: start;
+    padding-left: 2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+.fun-img img {
+    width: 90%;
+    height: auto;
+    border: 2px solid red;
+}
+.footer {
+    margin-top: 20%;
+    width: 100%;
+    height: 2vh;
+    background-color: rgb(45, 41, 41);
+    opacity: 0.8;
+    color: white;
+}
